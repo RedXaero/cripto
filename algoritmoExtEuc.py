@@ -1,6 +1,6 @@
 
-a = 1741
-b = 551
+a = int(input("a >"))
+b = int(input("b >"))
 #     n n-1 n-2
 r = [ 1, 0, 0]
 q = [ 0, 0, 0]
@@ -35,12 +35,12 @@ while( r[0] != 0 ):
 
 print("*******")
 print("({})X({}) + ({})X({})".format(a, y[2], b,x[2] ))
-if(y[1] >= 1):
-    print("d = {}".format(x[2]))
-else:
-    print("El inverso no existe");
+print("x = {}".format(y[2]))
+print("y = {}".format(x[2]))
 """
 print(r)
 print(x)
 print(y)
-print(q)"""
+print(q)
+"""
+#-----------

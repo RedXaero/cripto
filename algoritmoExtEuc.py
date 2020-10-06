@@ -37,10 +37,10 @@ print("*******")
 print("({})X({}) + ({})X({})".format(a, y[2], b,x[2] ))
 print("x = {}".format(y[2]))
 print("y = {}".format(x[2]))
-"""
+
 print(r)
 print(x)
 print(y)
 print(q)
-"""
+
 #-----------

@@ -41,6 +41,7 @@ if(e1 == phi):
             break
         e1 = e2
 
+
 print("e = ",e1)
 
 #AEU
@@ -57,51 +58,31 @@ print( "d = ", d)
 
 print("PU= {}, {} ".format(e1, n))
 print("PR= {}, {} ".format(d, n))
-
-
-
-"""
-Encriptación
-"""
+#---------------------------------------------
+e = e1
 cont = 1
 aux = 1
-e = e1
-
 while((e//2) != 0):
-    if((e%2) == 1):
+    if((e%2) != 0):
         aux *= pow(M, cont, n)
     cont *= 2
     e //= 2
 aux *= pow(M, cont, n)
-
+aux %= n
 print("Encriptado")
-print(aux % n)
-C = aux % n
-"""
-Desencriptado
-"""
+print(aux)
+C = aux
+#---------------------------------------------
 cont = 1
 aux = 1
 e = d
 while((e//2) != 0):
-    if((e%2) == 1):
+    if((e%2) != 0):
         aux *= pow(C, cont, n)
     cont *= 2
     e //= 2
-
 aux *= pow(C, cont, n)
+
+aux %= n
 print("Desencriptado")
-print(aux % n)
-
-"""
-print("pow(M: {}, e:{})= {}".format(M, e1,pow(M, e1)))
-print("")
-
-C = pow(M, e1, n)
-print("Encriptación >{}".format(C))
-print("")
-
-print("pow(C: {}, d: {})= {}".format(C, d, pow(C, d)))
-M = pow(C, d, n)
-print("Desencriptación >{}".format(M))
-"""
+print(aux)

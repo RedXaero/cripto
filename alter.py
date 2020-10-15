@@ -10,4 +10,5 @@ while((e//2) != 0):
     cont *= 2
     e //= 2
 aux *= pow(M, cont, n)
-print(aux % n)
+aux %= n
+print(aux)
